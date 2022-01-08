@@ -7,7 +7,7 @@
  - from your AWS ec2 node, as the default user, run:
  - be sure to give a user name in place of &lt;username>
 ```
-curl https://raw.githubusercontent.com/mhetzel/fantom-opera-validator/main/validatorSetup.sh | bash -s <username>
+curl https://raw.githubusercontent.com/mhetzel/fantom-opera-validator/main/setupValidator.sh | bash -s <username>
 ```
 ## 3. Sync node
 - Log in to the node as the new non-root user and run:
