@@ -106,8 +106,7 @@ sudo su - $USER --shell /bin/bash <<- 'EOT'
     echo $INSTALLED_OPERA
     if [[ ! -z "$INSTALLED_OPERA" && "$INSTALLED_OPERA" =~ .*"$OPERA_VERSION".* ]]
     then
-      echo "opera seems good. Leave this window going to sync the node and open a new ssh session with $USER"
-      opera --genesis mainnet.g
+      echo "opera seems good. close this window and open a new ssh session with $USER"
     else
       echo "opera did not install for some reason"
     fi
