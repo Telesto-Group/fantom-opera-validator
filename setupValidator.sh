@@ -102,12 +102,12 @@ sudo su - $USER --shell /bin/bash <<- 'EOT'
       cd ~
     fi
     # Validate opera version before moving on
-    INSTALLED_OPERA=$(opera help)
+    INSTALLED_OPERA=$(opera version)
     echo $INSTALLED_OPERA
     if [[ ! -z "$INSTALLED_OPERA" && "$INSTALLED_OPERA" =~ .*"$OPERA_VERSION".* ]]
     then
       echo "opera seems good. Leave this window going to sync the node and open a new ssh session with $USER"
-      opera --genesis mainnet.g --nousb
+      opera --genesis mainnet.g
     else
       echo "opera did not install for some reason"
     fi
