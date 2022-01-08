@@ -14,7 +14,9 @@ curl https://raw.githubusercontent.com/mhetzel/fantom-opera-validator/main/setup
 ```
 nohup ./opera --genesis mainnet.g --nousb &
 ```
-## 4. Create a validator wallet and validator
+## 4. [Create a validator wallet and validator](https://docs.fantom.foundation/staking/how-to-run-a-validator-node#create-a-validator-wallet)
+
+## 5. [Start in validator mode](https://docs.fantom.foundation/staking/how-to-run-a-validator-node#run-your-fantom-validator-node)
 
 ## Notes
 [Run commands in the background](https://www.computerhope.com/unix/unohup.htm)
