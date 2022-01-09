@@ -24,7 +24,8 @@ services:
       - '18545:18545'
     volumes:
       - opera:/root/.opera
-    command: "opera --genesis mainnet.g --validator.id $ID --validator.pubkey $KEY --validator.password ~/password"
+      - /home/fantom/passdir:/root/fantom
+    command: "opera --genesis mainnet.g --validator.id $ID --validator.pubkey $KEY --validator.password /root/fantom/password"
 
 volumes:
   opera: {}
