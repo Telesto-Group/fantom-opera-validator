@@ -2,8 +2,7 @@ version: "3.8"
 
 services:
   validator:
-    build:
-      context: mhetzel/operavalidator
+    image: mhetzel/operavalidator:1.0.2-rc.5
     restart: always
     ports:
       - '5050:5050'
