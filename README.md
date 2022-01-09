@@ -12,7 +12,7 @@ curl https://raw.githubusercontent.com/mhetzel/fantom-opera-validator/main/setup
 ## 3. Sync node
 - Log in to the node as the new non-root user and run:
 ```
-nohup ./opera --genesis mainnet.g --nousb &
+docker-compose up validator
 ```
 ## 4. [Create a validator wallet and validator](https://docs.fantom.foundation/staking/how-to-run-a-validator-node#create-a-validator-wallet)
 
@@ -21,3 +21,6 @@ nohup ./opera --genesis mainnet.g --nousb &
 ## Notes
 [Run commands in the background](https://www.computerhope.com/unix/unohup.htm)
 
+checking docker logs:
+docker ps -a
+docker logs --tail 100 <container ID> or docker logs --follow <container ID>
