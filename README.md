@@ -15,11 +15,13 @@ curl https://raw.githubusercontent.com/mhetzel/fantom-opera-validator/main/setup
 docker-compose up -d sync
 ```
 ## 4. Create a validator wallet and validator:
+- enter docker:
 ```
 docker-compose run validator /bin/bash
 ```
-run [commands from the docs](https://docs.fantom.foundation/staking/how-to-run-a-validator-node#create-a-validator-wallet)
-save your password to /home/fantom/password
+- run [commands from the docs](https://docs.fantom.foundation/staking/how-to-run-a-validator-node#create-a-validator-wallet)
+- save your password to /home/fantom/passdir/password
+- exit docker:
 ```
 exit
 ```
