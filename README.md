@@ -29,7 +29,7 @@ exit
 ## 5. [Start in validator mode](https://docs.fantom.foundation/staking/how-to-run-a-validator-node#run-your-fantom-validator-node)
 ```
 export VALIDATOR_ID=<validatorID>
-export KEY=<publicKey>
+export PUBLIC_KEY=<publicKey>
 docker-compose stop sync
 docker-compose up -d validator
 ```
